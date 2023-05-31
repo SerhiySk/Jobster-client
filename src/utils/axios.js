@@ -3,7 +3,7 @@ import { clearStore } from '../features/user/userSlice';
 import { getUserFromLocalStorage } from './localStorage';
 
 const customFetch = axios.create({
-  baseURL: '/api/v1',
+  baseURL: 'https://jobster-api-r05y.onrender.com/api/v1',
 });
 
 customFetch.interceptors.request.use(config => {
